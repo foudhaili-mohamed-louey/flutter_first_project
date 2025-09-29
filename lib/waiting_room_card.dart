@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'waiting_room_timestamp.dart';
 
-
 class WaitingRoomCard extends StatelessWidget {
   final String name;
 
@@ -16,13 +15,16 @@ class WaitingRoomCard extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('Hello,', style: TextStyle(fontSize: 16)),
+            const Text(
+              'Hello,',
+              style: TextStyle(fontSize: 16),
+            ),
             Text(
               name,
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 10), // Add some spacing
-            const WaitingRoomTimestamp(),
+            const SizedBox(height: 10),
+            const WaitingRoomTimestamp(), // Add the timestamp here
           ],
         ),
       ),
